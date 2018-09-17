@@ -1,8 +1,10 @@
+/* specificity:  1 */
 body {
   background: black url(../images/sketch.jpg) no-repeat center;
   background-size: cover;
 }
 
+/* specificity: 100 */
 #wall {
   position: relative;
   margin: 40px auto;
@@ -16,6 +18,7 @@ body {
   border-bottom: 60px solid white;
 }
 
+/*specificity : 6*100, 1*10 = 610 or 0,6,1,0 */
 .tag-1, #tag-2, #tag-3, #tag-4, #tag-5, #tag-6, #tag-7 {
   position: absolute;
   top: 0;
@@ -24,42 +27,51 @@ body {
   height: 622px;
 }
 
+/*specificity: 10 */
 .tag-1 {
   background: url(../images/tag-1.png) no-repeat;
   z-index: 7;
   display: block;
 }
 
+/*specificity : 200  or 0, 2, 0, 0 */
 #wall #tag-2 {
   background: url(../images/tag-2.png) no-repeat;
   z-index: 6;
   display: block;
 }
-
+/*specificity : 200, 10, 1 */
 div#wall #tag-3.slick {
   background: url(../images/tag-3.png) no-repeat;
   z-index: 5;
   display: block;
 }
 
+/*specificity: 200 */
 #wall #tag-4 {
   background: url(../images/tag-4.png) no-repeat;
   z-index: 4;
   display: block;
 }
 
+/*specificity: 200, 20, 1 */
 div#wall .parent #tag-5.slick {
   background: url(../images/tag-5.png) no-repeat;
   z-index: 3;
   display: block;
 }
 
+/*specificity: 200, 20, 4 (last-child is pseudo-class or 2*class) */ 
 div#wall div.parent div:last-child div#tag-6 {
   background: url(../images/tag-6.png) no-repeat;
   z-index: 2;
   display: block;
 }
-
+/*2 id's, 2 classes-attributes-pseudo-classes,  4 elts and pseudo-elts */
+/*#wall, #tag-7 : 2 id's */
+/*.parent, .slick: 2 classes */
+/*body, div#wall, div.parent, div > ...: 4 elts */
+/*200, 20, 4 */
 body div#wall div.parent div > #tag-7.slick {
   background: url(../images/tag-7.png) no-repeat;
   z-index: 1;
