@@ -38,7 +38,7 @@ body {
 #wall #tag-2 {
   background: url(../images/tag-2.png) no-repeat;
   z-index: 6;
-  display: block;
+  display: none;
 }
 /*specificity : 200, 10, 1 */
 div#wall #tag-3.slick {
