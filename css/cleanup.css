@@ -1,4 +1,4 @@
-#wall .tag-1  {
+#wall .tag-1  body div#wall div.parent {
     display: none;
 }
 
