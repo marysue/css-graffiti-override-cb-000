@@ -2,18 +2,10 @@
     display: none;
 }
 
-#wall #tag-2 #tag-3.slick {
+#wall #tag-2 #tag-3.slick #tag-4{
   display: none;
 }
 
-#wall #tag-3 {
-  display:none;
-}
 
-}
-
-#wall #tag-2 #tag-3.slick {
-  display:none;
-}
 
 /* #tag-2 #tag-3.slick #tag-4 #tag-5 .slick .wicked  div#tag-6 div > #tag-7.slick*/
