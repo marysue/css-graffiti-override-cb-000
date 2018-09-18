@@ -32,7 +32,8 @@ body {
   background: url(../images/tag-1.png) no-repeat;
   z-index: 7;
   display: block;
-  border:10px;
+  border-color: black;
+  border-width: thick;
 }
 
 /*specificity : 200  or 0, 2, 0, 0 */
