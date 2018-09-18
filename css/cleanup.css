@@ -22,6 +22,8 @@ body div#wall .parent #tag-5.slick {
   display:none;
 }
 
+/*The only way I could get this to work, because it is super specific now 
+  was to switch the order of the stylesheets, so cleanup.css was last */
 body div#wall div.parent div > #tag-7.slick {
   display:none;
 }
