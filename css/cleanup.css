@@ -1,1 +1,36 @@
-/* write your override styles here */
+#wall .tag-1 {
+    display: none;
+}
+
+body #wall #tag-2 {
+  display: none;
+}
+
+body div#wall #tag-3.slick {
+  display : none;
+}
+
+body #wall #tag-4 {
+  display : none;
+}
+
+body div#wall .parent #tag-5.slick {
+  display : none;
+}
+
+#wall div.parent div:last-child div#tag-6 {
+  display:none;
+}
+
+/*The only way I could get this to work, because it is super specific now
+  was to switch the order of the stylesheets, so cleanup.css was last */
+body div#wall div.parent div > #tag-7.slick {
+  display:none;
+}
+
+
+
+
+
+
+/* #tag-2 #tag-3.slick #tag-4 #tag-5 .slick .wicked  div#tag-6 div > #tag-7.slick*/
